@@ -1,0 +1,25 @@
+# File: pyproject.toml
+#
+# A simplified and robust version for the "flat layout"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "personal-chat-slm"
+version = "0.1.0"
+authors = [
+  { name="Prayas Gautam", email="prayas12gautam@gmail.com" },
+]
+description = "A nano-LLM for personal chat data. Export your chat data and train"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "torch==2.7.1",
+    "numpy==2.3.2",
+]
+
+# Update the entry point to point to the correct package name and module
+[project.scripts]
+personal-chat-slm = "personal_chat_slm.cli:main"
