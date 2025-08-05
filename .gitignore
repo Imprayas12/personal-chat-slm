@@ -3,6 +3,7 @@
 # This is the most important part for your project.
 data/
 models/
+dist/
 
 # --- Python ---
 # Ignore Python cache files, compiled files, and virtual environments.
