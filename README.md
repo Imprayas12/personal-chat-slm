@@ -48,7 +48,7 @@ Run the `clean` command to process your raw chat file.
 
 ```bash
 # This command will read your raw chat file and create a clean version.
-custom-llm clean --input-file data/my_chat.txt --output-file data/chat_clean.txt
+personal-chat-slm clean --input-file data/my_chat.txt --output-file data/chat_clean.txt
 ```
 
 ### Step 3: Train the Model
@@ -57,7 +57,7 @@ Now, use the cleaned data to train your model. This step will take time and is b
 
 ```bash
 # This command starts the training process and saves the final model.
-custom-llm train --data_path data/chat_clean.txt --max-iters 5000
+personal-chat-slm train --data_path data/chat_clean.txt --max-iters 5000
 ```
 
   * `--max-iters`: The number of training steps. 5000 is a good starting point. More iterations can lead to a better model but will take longer.
@@ -69,7 +69,7 @@ Once your model is trained, you can use it to generate text from any prompt.
 
 ```bash
 # Provide a prompt directly on the command line.
-custom-llm generate "Hey, what are you doing tonight?" --max-new-tokens 300
+personal-chat-slm generate "Hey, what are you doing tonight?" --max-new-tokens 300
 ```
 
 The model will load your trained weights and generate text that continues the prompt in the style it has learned.
@@ -93,7 +93,7 @@ If you want to contribute or modify the source code, follow these steps:
     ```
 
 3.  **Install in editable mode:**
-    This command links the `custom-llm` command to your source code, so any changes you make are immediately reflected.
+    This command links the `personal-chat-slm` command to your source code, so any changes you make are immediately reflected.
 
     ```bash
     pip install -e .
