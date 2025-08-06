@@ -81,7 +81,7 @@ If you want to contribute or modify the source code, follow these steps:
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/yourusername/personal-chat-slm.git](https://github.com/yourusername/personal-chat-slm.git)
+    git clone [https://github.com/Imprayas12/personal-chat-slm.git](https://github.com/Imprayas12/personal-chat-slm.git)
     cd personal-chat-slm
     ```
 
